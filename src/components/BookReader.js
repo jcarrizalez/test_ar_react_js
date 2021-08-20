@@ -107,7 +107,7 @@ export default function BookReader({match:{url, params}, query}) {
         */
         //let book = state.books.pop();
         //getDatauseCallback(setUpdate, (book.page+1));
-        console.log('debo para despues')
+        console.log('scroll dejo para despues')
       }
     }
 
