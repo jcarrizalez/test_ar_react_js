@@ -1,7 +1,8 @@
 import React, {useEffect, useState, useRef } from "react";
+import User from './User';
+import Books from './Books';
 import Title from './BookTitle';
 import Content from './Content';
-import Books from './Books';
 import {api_url} from '../services';
 
 /**
@@ -140,8 +141,12 @@ export default function BookReader({match:{url, params}, query}) {
   return(
     <div className="snippet-body" id="body-pd">
       <header className="header" id="header">
-          <div className="header_img"> <img src="https://lh3.googleusercontent.com/ogw/ADea4I67xIQeX_J_E6zDV36Y8jDeFMpg0-lvd2j8saGqTw=s83-c-mo" alt="" loading="lazy" /> </div>
-          <div className="header_toggle"><i className="bx bx-menu" id="header-toggle" onClick={onExpand}></i> </div>
+          <div className="header_img">
+            <User />
+          </div>
+          <div className="header_toggle">
+            <i className="bx bx-menu" id="header-toggle" onClick={onExpand}></i>
+          </div>
       </header>
       <div className="l-navbar" id="nav-bar">
           <nav className="nav">
