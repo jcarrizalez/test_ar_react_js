@@ -11,6 +11,7 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "history": "^5.0.0",
+    "jquery": "^3.3.1",
     "popper.js": "^1.14.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -24,8 +25,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "local": "PORT=4000 REACT_APP_ENV=local npm run start;",
-    "production": "PORT=4001 REACT_APP_ENV=production npm run start;",
+    "local": "PORT=8881 REACT_APP_ENV=local npm run start;",
+    "production": "PORT=8881 REACT_APP_ENV=production npm run start;",
     "build-production": "rm -rf build; npm run compile-sass; npm run minify-sass; npm run map-sass; REACT_APP_ENV=production react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
