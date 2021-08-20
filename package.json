@@ -1,0 +1,54 @@
+{
+  "name": "test_ar_react_js",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://localhost:4000",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "react-scripts": "4.0.3",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "history": "^5.0.0",
+    "popper.js": "^1.14.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "redux-js": "^1.0.6",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.3.1",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "local": "PORT=4000 REACT_APP_ENV=local npm run start;",
+    "production": "PORT=4001 REACT_APP_ENV=production npm run start;",
+    "build-production": "rm -rf build; npm run compile-sass; npm run minify-sass; npm run map-sass; REACT_APP_ENV=production react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "compile-sass": "node-sass src/assets/main.scss src/assets/css/main.css",
+    "minify-sass": "node-sass src/assets/main.scss src/assets/css/main.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/main.scss src/assets/css/main.css --source-map true"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
